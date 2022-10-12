@@ -12,8 +12,8 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://node:16'
-  args:
-    - /bin/sh -c 'yarn install && yarn build'
+  entrypoint: "ls -al"
+   
   # image: 'Dockerfile'
   # args:
   #   - ${{ inputs.who-to-greet }}
