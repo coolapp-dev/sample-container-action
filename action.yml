@@ -12,7 +12,7 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://node:16'
-  #entrypoint: /bin/bash -c "ls -al"
+  entrypoint: /bin/bash
    
   # image: 'Dockerfile'
   args:
