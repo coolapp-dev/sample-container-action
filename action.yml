@@ -1,21 +1,23 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'yarn/npm build in a container'
+description: 'runs js/ts builds in container'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  node_version:  # id of input
+    description: 'Node version'
     required: true
-    default: 'World'
+    default: "16"
 outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'docker://node:16'
-  entrypoint: /bin/bash
+  #entrypoint: /bin/bash
    
   # image: 'Dockerfile'
   args:
+    - /bin/bash
     - -c
     - ls -al
+    - which yarn
   #   - ${{ inputs.who-to-greet }}
