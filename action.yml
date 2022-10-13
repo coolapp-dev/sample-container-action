@@ -19,6 +19,6 @@ runs:
     #- /bin/bash -c ls -al
     - /bin/bash
     - -c
-    - cd test/sample-app && yarn install && yarn build
+    - yarn install && yarn build
 
   #   - ${{ inputs.who-to-greet }}
