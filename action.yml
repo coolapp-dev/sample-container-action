@@ -16,5 +16,6 @@ runs:
    
   # image: 'Dockerfile'
   args:
+    - -c
     - ls -al
   #   - ${{ inputs.who-to-greet }}
