@@ -11,14 +11,14 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: "docker://node:${{ inputs.node_version }}"
+  image: "docker://node:16"
   #entrypoint: /bin/bash
    
   # image: 'Dockerfile'
   args:
-    - /bin/bash -c ls -al
-    # - /bin/bash
-    # - -c
-    # - ls -al
+    #- /bin/bash -c ls -al
+    - /bin/bash
+    - -c
+    - ls -al && pwd
 
   #   - ${{ inputs.who-to-greet }}
