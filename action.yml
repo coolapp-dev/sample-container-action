@@ -16,8 +16,9 @@ runs:
    
   # image: 'Dockerfile'
   args:
-    - /bin/bash
-    - -c
-    - ls -al
-    - which yarn
+    - /bin/bash -c ls -al
+    # - /bin/bash
+    # - -c
+    # - ls -al
+
   #   - ${{ inputs.who-to-greet }}
