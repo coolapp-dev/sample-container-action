@@ -12,8 +12,9 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://node:16'
-  entrypoint: /bin/bash -c "ls -al"
+  #entrypoint: /bin/bash -c "ls -al"
    
   # image: 'Dockerfile'
-  # args:
+  args:
+    - ls -al
   #   - ${{ inputs.who-to-greet }}
